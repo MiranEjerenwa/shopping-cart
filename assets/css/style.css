@@ -1,6 +1,12 @@
-.cartNav {
-    width: 400px;
+.itemsList {
+    width: 300px;
     height: 600px;
     background-color: #339967;
+float: left;
+margin: 20px auto;
+
+}
+.shoppingCart {
+    background-color: #836190;
 
 }
