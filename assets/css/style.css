@@ -7,7 +7,7 @@
 .maincontent {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #7EC855;
 }
 
@@ -16,7 +16,7 @@
     width: 300px;
     height: 600px;
     background-color: #339967;
-margin: 20px auto;
+margin: 20px;
 display: flex;
 flex-direction: column;
 
@@ -25,11 +25,11 @@ flex-direction: column;
 .shoppingCart {
     width: 750px;
   height: 423px;
-  margin: 40px auto;
+  margin-top: 40px;
+  margin-bottom: 200px;
   background: #FFFFFF;
   box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
   border-radius: 6px;
- 
   display: flex;
   flex-direction: column;
 }
@@ -47,16 +47,20 @@ flex-direction: column;
 }
 /* hide colapsible content */
 ul {
-    padding: 0 18px;
+    /* padding: 40px 40px 40px 18px;
+    font-weight: bolder; */
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1;
+    cursor: pointer; */
   }
-
-
-
-li {
-    display: grid;
+.details {
+    padding: 10px 10px 10px 10px;
+    font-weight: bolder;
+    /* display: none; */
+    /* overflow: hidden; */
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 .collapsibleList:hover {
