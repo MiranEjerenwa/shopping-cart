@@ -1,14 +1,26 @@
 // How the list looks
-CollapsibleLists.applyTo(document.querySelectorAll('#collapsibleList'));
+const coll = document.querySelectorAll('.collapsibleList');
+var i;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
 
 // landing page
 
 const displayItems1 = function () {
     hideAll();
-    $('.dropdown1').render();
+    $('.dropdown').render();
 }
     
-$('.dropdown1').on('click',displayItems1);
+$('.dropdown').on('click',displayItems1);
 $('.details').on('click',view);
 // user will be presented with a list of items on the left as well as a shopping cart on the right.
 // user selects an item from the left, it will be added and updated to the shopping cart.
