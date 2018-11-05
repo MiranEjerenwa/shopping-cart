@@ -74,7 +74,61 @@ const itemDetails = [{
     itemName: 'iphone x',
     itemDescription: `Apple's new way of making money`,
     itemPrice: '$1400',
-    itemCategory: 'Electronics'
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'Ps4x',
+    itemDescription: `play away your life`,
+    itemPrice: '$560',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'HP Laptop',
+    itemDescription: `cyan ultra slim`,
+    itemPrice: '$1200',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'Dell Monitor',
+    itemDescription: `19 display hd`,
+    itemPrice: '$89.99',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'Alarm system x',
+    itemDescription: `Never get a break in again`,
+    itemPrice: '$1400',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'Universal remote control',
+    itemDescription: `Sync all your devices`,
+    itemPrice: '$600',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'Samsung Camera',
+    itemDescription: `1200 pixels, all in one. Edit and print`,
+    itemPrice: '$950',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'Dish Washer',
+    itemDescription: `GE twin compartment`,
+    itemPrice: '$1800',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'Roku TV',
+    itemDescription: `Best Free TV solution - all in one`,
+    itemPrice: '$100',
+    itemCategory: 'electronics'
+},
+{
+    itemName: 'DVD Player',
+    itemDescription: `HD`,
+    itemPrice: '$400',
+    itemCategory: 'electronics'
 }
 ]
 

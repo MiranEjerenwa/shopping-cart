@@ -14,7 +14,7 @@
 .itemsList {
     float: left;
     width: 300px;
-    height: 600px;
+    height: 100%;
     background-color: #339967;
 margin: 20px;
 display: flex;
@@ -24,7 +24,7 @@ flex-direction: column;
 }
 .shoppingCart {
     width: 750px;
-  height: 423px;
+  height: 700px;
   margin-top: 40px;
   margin-bottom: 200px;
   background: #FFFFFF;
