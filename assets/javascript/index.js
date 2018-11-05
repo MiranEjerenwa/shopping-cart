@@ -14,15 +14,16 @@ for (i = 0; i < coll.length; i++) {
     });
   }
 
-  const enterCart = document.querySelectorAll('#addToCart');
-  enterCart.addEventListener('click', function() {
-    $('#addToCart').on('click', function () {
-        console.log('hello');
-        
-    })
-      enterCart.classList.toggle('active');
+  // const enterCart = document.querySelectorAll('#addToCart');
+  // console.log('enterCart', enterCart);
+  // enterCart.addEventListener('click', function() {
+  //   $('#addToCart').on('click', function () {
+  //       console.log('hello');
+    
+  //   })
+  //     enterCart.classList.toggle('active');
      
-  });
+  // });
 
 // const displayItems1 = function () {
 //     hideAll();
