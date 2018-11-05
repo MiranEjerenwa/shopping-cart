@@ -132,25 +132,21 @@ const itemDetails = [{
 }
 ]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// user will be presented with a list of items on the left as well as a shopping cart on the right.
+// How the list looks
+const coll = document.querySelectorAll('.collapsibleList');
+var i;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
 
 //create for loop that goes through array of item details
 
@@ -161,19 +157,33 @@ for (let i = 0; i < itemDetails.length; i++) {
     $(`.${itemDetails[i].itemCategory}`).append(newListItem);
 }
 
+// let items enter cart on click
   const enterCart = document.querySelectorAll('.addToCart');
   console.log('enterCart', enterCart);
-  // wrap the below code in a for loop that iterates for the length of enterCart
+
+
+// wrap the below code in a for loop that iterates for the length of enterCart
   
-  enterCart.addEventListener('click', function() {
-    for (let i = 0; i < enterCart.length; i++)
-    $('.addToCart').on('click', function () {
-        console.log('hello');
+// for (let i = 0; i < enterCart.length; i++) {
+//     let selectItem = $('.shoppingCart').append(enterCart);
+//     console.log('hit second loop');
+//     $('.addToCart').on('click', selectItem);
+// }
+
+
+
+
+//   enterCart.addEventListener('click', function() {
+//     {
+
+//     }
+//     $('.addToCart').on('click', function () {
+//         console.log('hello');
     
-    })
-      enterCart.classList.toggle('active');
+//     })
+//       enterCart.classList.toggle('active');
      
-  });
+//   });
 //  
 // $('.newList').append(newListItem);
 

@@ -33,6 +33,10 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
 }
+
+h1 {
+    font-size: xx-large;
+}
 /* open and close collapsible content */
 .collapsibleList {
     background-color: #365430;
