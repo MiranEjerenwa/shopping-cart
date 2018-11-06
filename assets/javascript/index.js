@@ -48,15 +48,13 @@ for (let i = 0; i < itemDetails.length; i++) {
 
 // user selects an item from the left, it will be added and updated to the shopping cart.
 // let items enter cart on click
-  // const enterCart = document.querySelectorAll('.addToCart');
-  // console.log('enterCart', enterCart);
 
 $('.details').on('click', function () {
   // $(this) // selected item
   const element = $(this).html();
 
   // validation
-  $('.shoppingCart').append(`<p class='shopping-cart__item'>${element}</p>`);
+  $('.shoppingCart').append(`<p class='shopping-cart__item'><button class="styled">${element}</button></p>`);
 
 }); // selector
 

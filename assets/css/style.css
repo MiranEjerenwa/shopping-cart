@@ -33,6 +33,9 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
 }
+button {
+    background-color: gold;
+}
 
 h1 {
     font-size: xx-large;
