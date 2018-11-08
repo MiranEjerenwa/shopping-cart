@@ -1,28 +1,5 @@
-  // const enterCart = document.querySelectorAll('#addToCart');
-  // console.log('enterCart', enterCart);
-  // enterCart.addEventListener('click', function() {
-  //   $('#addToCart').on('click', function () {
-  //       console.log('hello');
-    
-  //   })
-  //     enterCart.classList.toggle('active');
-     
-  // });
-
-// const displayItems1 = function () {
-//     hideAll();
-//     $('.dropdown').render();
-// }
-    
-// $('.dropdown').on('click',displayItems1);
-// $('.details').on('click',view);
-// user selects an item from the left, it will be added and updated to the shopping cart.
-// user attempts to add an item that already exists in their shopping cart, a message will be displayed alerting them that that item has already been added.
-// user will be able to click items to remove it from their shopping cart.
-// user is able to filter the list of all items by category.
-// 
 // user will be presented with a list of items on the left as well as a shopping cart on the right.
-// How the list looks
+// How the list looks, already filtered by category
 const coll = document.querySelectorAll('.collapsibleList');
 var i;
 for (i = 0; i < coll.length; i++) {
@@ -53,13 +30,25 @@ $('.details').on('click', function () {
   // $(this) // selected item
   const element = $(this).html();
 
+
+// user attempts to add an item that already exists in their shopping cart, a message will be displayed alerting them that that item has already been added.
   // validation
+let inCart = false;
+if (inCart) {
   $('.shoppingCart').append(`<p class='shopping-cart__item'><button class="styled">${element}</button></p>`);
+inCart = false;
+}
+else {
+  alert('Item already exists in your cart')
+  inCart = true;
+}
 
 }); // selector
 
+// user will be able to click items to remove it from their shopping cart.
 // Event Delegation
 $(document).on('click', '.shopping-cart__item', function() {
   $(this).remove(); // remove element
   // console.log('Element: ',  $(this).html());
 }); // selector
+

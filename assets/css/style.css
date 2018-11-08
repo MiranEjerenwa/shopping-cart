@@ -33,8 +33,9 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
 }
-button {
+.styled {
     background-color: gold;
+    size: 60px;
 }
 
 h1 {
@@ -79,4 +80,8 @@ ul {
 .dropdown {
     font-size: x-large;
     
+}
+.clearCart {
+    color: red;
+    size: 30px;
 }
