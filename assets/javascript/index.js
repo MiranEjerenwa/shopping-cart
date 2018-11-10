@@ -34,15 +34,13 @@ $('.details').on('click', function () {
 // user attempts to add an item that already exists in their shopping cart, a message will be displayed alerting them that that item has already been added.
   // validation
 let inCart = false;
-if (inCart) {
+if (inCart === false) {
   $('.shoppingCart').append(`<p class='shopping-cart__item'><button class="styled">${element}</button></p>`);
-inCart = false;
 }
 else {
-  alert('Item already exists in your cart')
-  inCart = true;
+  alert('Item already exists in your cart');
+inCart = true;
 }
-
 }); // selector
 
 // user will be able to click items to remove it from their shopping cart.
@@ -52,3 +50,12 @@ $(document).on('click', '.shopping-cart__item', function() {
   // console.log('Element: ',  $(this).html());
 }); // selector
 
+// User will be able to clear cart
+
+// $('.clearCart').on('click', function() {
+//   // document.querySelectorAll('.shoppingCart').empty();
+//   $('.shoppingCart').detach('.shopping-cart__item');
+// });
+$(document).on('click', '.clearCart', function() {
+  $('.shopping-cart__item').remove();
+});
